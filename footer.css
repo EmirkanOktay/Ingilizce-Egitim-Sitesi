@@ -1,0 +1,112 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.footer {
+    width: 100%;
+    background-color: black;
+    text-align: center;
+}
+
+.footer-wrapper {
+    width: 100%;
+    padding: 20px 0;
+}
+
+.list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.list ul li {
+    font-size: 13px;
+    margin: 35px 5px;
+    display: inline-block;
+}
+
+.list ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.list ul li a:hover {
+    color: rgb(219, 219, 219);
+    transition: 0.5s;
+}
+
+.mail {
+    width: 100%;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.mail i {
+    padding: 10px;
+    background-color: orange;
+    height: 39px;
+    vertical-align: middle;
+}
+
+.mail input[type="text"] {
+    padding: 10px;
+    width: 200px; 
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.mail #buton {
+    color: white;
+    background-color: orange;
+    height: 42px;
+    cursor: pointer;
+    border: none;
+    padding: 0 10px;
+    vertical-align: middle;
+}
+
+.mail #buton:hover {
+    background-color: rgb(230, 169, 55);
+    transition: 0.5s;
+}
+
+.copy {
+    width: 100%;
+    margin-top: 25px;
+}
+
+.copy p {
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .list ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .mail input[type="text"] {
+        width: 150px; 
+    }
+
+    .mail #buton {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .mail i {
+        display: none;
+    }
+
+    .mail input[type="text"] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .mail #buton {
+        width: 100%;
+        padding: 10px 0;
+    }
+}

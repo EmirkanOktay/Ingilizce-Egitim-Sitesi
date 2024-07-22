@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.section-wrapper {
+    width: 100%;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.section {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: relative;
+    top: 10%;
+}
+
+.section h2 {
+    font-weight: 100;
+    font-size: 50px;
+    position: relative;
+    display: inline-block;
+}
+
+.line {
+    width: 50%;
+    margin: 10px auto;
+    border: none;
+    border-top: 2px solid orange;
+}
+
+.section-box {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.section-box p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    margin: 30px;
+    display: inline-block;
+    padding: 50px;
+    font-size: 20px;
+    background-color: rgb(209, 207, 207);
+    border: 1px solid rgb(174, 174, 174);
+    transition: padding 0.6s;
+}
+
+.section-box a {
+    display: block;
+    margin-top: 30px;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    background-color: #cacac2;
+}
+
+.section-box p:hover {
+    padding: 70px;
+}
+
+@media (max-width: 720px) {
+    .section {
+        top: 5%;
+        overflow-x: hidden;
+    }
+
+    .section h2 {
+        font-size: 40px;
+    }
+
+    .line {
+        width: 70%;
+    }
+
+    .section-box p {
+        padding: 20px;
+        margin: 20px;
+        font-size: 18px;
+    }
+
+    .section-box a {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    * {
+        overflow-x: hidden;
+    }
+    .section h2 {
+        font-size: 30px;
+    }
+
+    .line {
+        width: 90%;
+    }
+
+    .section-box p {
+        padding: 10px;
+        margin: 10px;
+        font-size: 16px;
+    }
+
+    .section-box a {
+        padding: 6px;
+    }
+}
+
+/* Responsive styling for the team section */
+.team {
+    text-align: center;
+    padding: 20px;
+}
+
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.team-member {
+    flex: 1 1 300px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+.team-member h3 {
+    font-size: 24px;
+}
+
+.team-member p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+@media (max-width: 720px) {
+    .team-member {
+        flex: 1 1 100%;
+        margin: 10px 0;
+        padding: 15px;
+    }
+
+    .team-member h3 {
+        font-size: 22px;
+    }
+
+    .team-member p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .team-member {
+        padding: 10px;
+    }
+
+    .team-member h3 {
+        font-size: 20px;
+    }
+
+    .team-member p {
+        font-size: 12px;
+    }
+}

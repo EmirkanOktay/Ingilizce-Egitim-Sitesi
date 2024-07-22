@@ -1,0 +1,33 @@
+*{margin: 0px;
+padding: 0px;}
+
+.kayit-wrapper{
+    width: 100%;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.kayit-wrapper .kayit-rigth{
+    position: relative;
+    float:inline-end;
+    right: 42%;
+    top: 10%;
+}
+
+.kayit-wrapper h2,p{
+    text-align: center;
+    position: relative;
+}
+
+.kayit-wrapper h2{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    padding-top: 40px;
+}
+
+.kayit-wrapper p{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+}
